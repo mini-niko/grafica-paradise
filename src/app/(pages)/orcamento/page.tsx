@@ -63,7 +63,7 @@ export default function OrcamentoPage() {
   ];
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-16">
       <div className="mb-8 text-center">
         <h1 className="mb-2 text-3xl font-bold">Solicite seu Orçamento</h1>
         <p className="text-muted-foreground">
@@ -72,6 +72,21 @@ export default function OrcamentoPage() {
       </div>
 
       <div className="mx-auto max-w-2xl">
+        <Card className="mb-6">
+          <CardHeader>
+            <CardTitle>Envie seu Arquivo</CardTitle>
+            <CardDescription>
+              Formatos aceitos: PNG, AI, JPG, PDF, SVG
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Input
+              type="file"
+              accept=".png,.ai,.jpg,.pdf,.svg"
+              className="cursor-pointer"
+            />
+          </CardContent>
+        </Card>
         <Card>
           <CardHeader>
             <CardTitle>Detalhes do Pedido</CardTitle>
@@ -187,22 +202,6 @@ export default function OrcamentoPage() {
                 </div>
               </form>
             </Form>
-          </CardContent>
-        </Card>
-
-        <Card className="mt-6">
-          <CardHeader>
-            <CardTitle>Envie seu Arquivo</CardTitle>
-            <CardDescription>
-              Formatos aceitos: PNG, AI, JPG, PDF, SVG
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <Input
-              type="file"
-              accept=".png,.ai,.jpg,.pdf,.svg"
-              className="cursor-pointer"
-            />
           </CardContent>
         </Card>
       </div>
