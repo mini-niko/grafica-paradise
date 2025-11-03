@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="border-t bg-background">
       <div className="py-8 md:py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 mx-16">
-          <div>
+          <div className="text-center md:text-start">
             <h3 className="text-lg font-semibold">Gráfica Paradise</h3>
             <p className="mt-2 text-sm text-muted-foreground">
               Do esboço à realidade - criamos o que você imagina
@@ -34,7 +34,7 @@ export function Footer() {
               <li>Xanxerê - SC</li>
             </ul>
           </div>
-          <div className="text-end">
+          <div className="text-center md:text-end">
             <h3 className="text-lg font-semibold">Links Rápidos</h3>
             <ul className="mt-2 space-y-2 text-sm text-muted-foreground">
               <li>

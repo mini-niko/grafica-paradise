@@ -28,7 +28,7 @@ export default function RootLayout({
           inter.variable
         )}
       >
-        <div className="relative flex min-h-screen flex-col">
+        <div className="relative flex min-h-screen flex-col overflow-clip">
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
